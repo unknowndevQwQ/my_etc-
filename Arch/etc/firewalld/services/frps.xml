@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>FRP Server</short>
+  <description>frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall to the Internet.</description>
+  <port port="6000-8000" protocol="tcp"/>
+  <port port="6000-8000" protocol="udp"/>
+  <port port="4000-20000" protocol="tcp"/>
+  <port port="4000-20000" protocol="udp"/>
+</service>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>V2Ray</short>
+  <description>Project V is a set of tools to help you build your own privacy network over internet. The core of Project V, named V2Ray, is responsible for network protocols and communications.</description>
+  <include service="http"/>                  <!-- transport use h2c/ws/tcp&http-header -->
+  <include service="https"/>                 <!-- transport use h2/tls/wss/xtls -->
+  <port port="10086" protocol="tcp"/>        <!-- legacy proxy port -->
+  <port port="10086" protocol="udp"/>        <!-- legacy proxy port -->
+  <port port="16823" protocol="tcp"/>        <!-- default proxy port -->
+  <port port="16823" protocol="udp"/>        <!-- default proxy port -->
+  <port port="10000-20000" protocol="tcp"/>  <!-- default proxy dynamic port range -->
+  <port port="10000-20000" protocol="udp"/>  <!-- default proxy dynamic port range -->
+  <port port="37192" protocol="tcp"/>        <!-- default proxy dynamic port starter -->
+  <port port="37192" protocol="udp"/>        <!-- default proxy dynamic port starter -->
+</service>
